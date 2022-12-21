@@ -1,28 +1,20 @@
 #!/usr/bin/python3
+"""
+This is the "Square"  module.
+This module provides a simple Square class with initialize size.
+Defaults size to 0. Raise error on invalid size inputs.
+Method area returns size of area of the square.
+"""
 
 
 class Square:
-
+    """A class that defines a square by size and can compute area"""
     def __init__(self, size=0):
-        """Initializing this square class
-        Args:
-            size: represnets the size of the square defined
-        Raises:
-            TypeError: if size is not integer
-            ValueError: if size is less than zero
-        """
-
-        if not isinstance(size, int):
-            raise TypeError('size must be an integer')
+        if type(size) != int:
+            raise TypeError("size must be an integer")
         if size < 0:
-            raise ValueError('size must be >= 0')
-
+            raise ValueError("size must be >= 0")
         self.__size = size
 
     def area(self):
-        """
-        Calculate area of the square
-        Returns: The square of the size
-        """
-
-        return (self.__size ** 2)
+        return self.__size * self.__size
