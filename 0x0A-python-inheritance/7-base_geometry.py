@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 
 class BaseGeometry:
-	"""class that represents the base geometry"""
 
-	def area(self):
+	"""class that represents the base geometry"""
+    def area(self):
 		"""area method which isnt implemented"""
-		raise Exception("area() is not implemented")
+	    raise Exception("area() is not implemented")
 	def integer_validatot(self, name, value):
 		"""validates the integer passed to be an integer"""
 		if type(value) != int:
