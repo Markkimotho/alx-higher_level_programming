@@ -9,7 +9,9 @@
 ---
 ### base.py
 	It holds the 
-	```class Base:```
+	```python
+	class Base:
+	```
 ### rectangle.py
 	It holds the 
 	```class Rectangle(Base):```
