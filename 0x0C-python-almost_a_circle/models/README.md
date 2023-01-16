@@ -2,19 +2,26 @@
 ---
 ---
 ## Files: 
+***
+         1. base.py
+         2. rectangle.py
+         3. square.py
 ---
-	* base.py
-	* rectangle.py
-	* square.py
----
-### base.py
-	It holds the 
-	```python
-	class Base:
-	```
-### rectangle.py
-	It holds the 
-	```class Rectangle(Base):```
-### square.py
-	It holds the ```class Square(Rectangle):```
----
+ ### base.py
+     
+ ```
+ class Base:
+ 	... 
+ ```
+ ### rectangle.py
+        
+ ```
+ class Rectangle(Base):
+ 	...
+ ```
+ ### square.py
+ 
+ ```
+ class Square:
+ 	...
+ ```
