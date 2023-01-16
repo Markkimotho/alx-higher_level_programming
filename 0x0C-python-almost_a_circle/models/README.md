@@ -8,9 +8,11 @@
 	* square.py
 ---
 ### base.py
-	It holds the ```class Base:```
+	It holds the 
+	```class Base:```
 ### rectangle.py
-	It holds the ```class Rectangle(Base):```
+	It holds the 
+	```class Rectangle(Base):```
 ### square.py
 	It holds the ```class Square(Rectangle):```
 ---
