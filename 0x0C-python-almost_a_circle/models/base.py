@@ -4,6 +4,7 @@
 
 import json
 import csv
+import turtle
 
 
 class Base:
@@ -154,3 +155,42 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """A static method that draws the rectangle object
+        defined using turtle graphics.
+        """
+        t = turtle.Turtle()
+        t.screen.bgcolor("black")
+        t.pensize(2)
+        t.shape("turtle")
+        t.color("white")
+
+        for _rectangle in list_rectangles:
+            t.showturtle()
+            t.up()
+            t.goto(_rectangle.x, _rectangle.y)
+            t.down()
+            for i in range(2):
+                t.forward(_rectangle.width)
+                t.left(90)
+                t.forward(_rectangle.height)
+                t.left(90)
+            t.hideturtle()
+
+        t.color("white")
+
+        for _square in list_squares:
+            t.showturtle()
+            t.up()
+            t.goto(_square.x, _square.y)
+            t.down()
+            for i in range(2):
+                t.forward(_square.width)
+                t.left(90)
+                t.forward(_square.height)
+                t.left(90)
+            t.hideturtle()
+
+        turtle.exitonclick()
