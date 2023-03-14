@@ -1,4 +1,3 @@
-
 #!/usr/bin/node
 
 class Rectangle {
@@ -16,15 +15,15 @@ class Rectangle {
     }
   }
 
-  rotate (){
+  rotate () {
     const placeHolder = this.width;
     this.width = this.height;
     this.height = placeHolder;
   }
 
-  double (){
+  double () {
     this.width *= 2;
-    this.height *=2;
+    this.height *= 2;
   }
 }
 
