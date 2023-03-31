@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""
+"""module that finds the error code using
+urllib
 """
 
 import sys
