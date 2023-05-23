@@ -9,5 +9,5 @@ request(url, function (error, response) {
     console.error(error);
   }
   const statusCode = response && response.statusCode;
-  console.log('Code:', statusCode);
+  console.log('code:', statusCode);
 });
