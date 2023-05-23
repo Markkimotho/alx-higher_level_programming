@@ -13,7 +13,7 @@ request(url, function (error, response, body) {
   const charactersURL = films.results[id].characters;
 
   for (const charURL of charactersURL) {
-    request(String(charURL), function (error, response, body) {
+    request(charURL, function (error, response, body) {
       if (error) {
         console.error(error);
       }
